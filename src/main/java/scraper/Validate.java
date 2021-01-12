@@ -89,8 +89,6 @@ public static Scanner input = new Scanner(System.in);
         components[3] =  radius;
         components[4] =  mileage;
         return components;
-        
-        
     }
     /*
     ======================== String[] changeSearch() ===========================
@@ -166,7 +164,6 @@ public static Scanner input = new Scanner(System.in);
         return zip;
     } 
     
-    
     /*
     ========================== String getSearchRadius() ========================
     Takes the user input for search radius and validates it before allowing the 
@@ -192,7 +189,6 @@ public static Scanner input = new Scanner(System.in);
         System.out.println("----------------------------------------------------");
         return radiu;
     }
-    
     
     /*
     ============================ String getQuery() =============================
