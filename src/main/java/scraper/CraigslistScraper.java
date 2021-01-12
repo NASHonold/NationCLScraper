@@ -21,6 +21,10 @@ public class CraigslistScraper {
 
     public static void main(String[] args) {
         mainLoop();
+        
+        
+        System.out.println("This is only a test for pushing to another branch\n"
+                + "must delete. ");
     }
     
     //==========================================================================
