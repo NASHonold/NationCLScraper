@@ -60,7 +60,14 @@ public static Scanner input = new Scanner(System.in);
     }
         return cleanRegion;
     }
+    /*
+    =========================== String[] getSearchComponents() =================
+    THis method is responsible for capturing user input, validating it, and 
+    creating a string array from it that will be passed to other methods
+    for specific searches. this allows each string in the array to be manipulated
+    singularly later without having to create an entirely new list of search criteria. 
     
+    */
     public static String[] getSearchComponents(){
         /*
         indices:
