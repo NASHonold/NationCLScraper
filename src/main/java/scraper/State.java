@@ -96,8 +96,6 @@ public class State {
             return returnUrl;
     }
     
-    
-    
     /*
     ============================ String nearestZip() ==========================
     Returns the 5 digit zipcode in the String[] zipCodes that is closest to the 
@@ -124,7 +122,6 @@ public class State {
         }
         return zipCodes[indexOfCloseZip];
     }
-    
     
     /*
     ============================ void printState() =============================
