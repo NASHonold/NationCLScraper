@@ -21,7 +21,7 @@ public class Item {
     private double fuelCostMin;
     private double fuelCostMax;
     private String Location;
-    private String homeState;
+    //private String homeState;
 
     
     //========================= getters/ setters ===============================

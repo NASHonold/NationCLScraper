@@ -21,7 +21,6 @@ public class CraigslistScraper {
 
     public static void main(String[] args) {
         mainLoop();
-        
     
     }
     

@@ -74,6 +74,7 @@ public class Web {
         //           [stateName] [stateName] 
         //           [avgPrice]  [avgPrice]  
         }
+        client.close();
         return table;
     }
     
@@ -95,7 +96,7 @@ public class Web {
         client.getOptions().setCssEnabled(false);
         client.getOptions().setUseInsecureSSL(true);
         String url = "https://www.craigslist.org/about/sites";
-        ArrayList<State> states = new ArrayList<>();
+        //ArrayList<State> states = new ArrayList<>();
         
         try{
             HtmlPage page = client.getPage(url);
@@ -115,11 +116,13 @@ public class Web {
                     stateRegionXmls, gasTable);
             //printStateArray(stateObjectArray);
             System.out.println("\n");
+            client.close();
             return stateObjectArray;
             
         }
         catch(IOException e){
             System.out.println("Unable to generate Craigslist global homepage data. ");
+            client.close();
             return null;
         }
     }
@@ -367,6 +370,7 @@ public class Web {
             System.out.println("Unable to produce zipcode for county: " + county);
             cleanCounty = "NA";
         }
+        client.close();
         return cleanCounty;
     }
     /*
@@ -404,7 +408,7 @@ public class Web {
         catch(IOException | NullPointerException e){
           zip = "NA";
         }
-        
+        client.close();
         return zip;
         
     }
@@ -444,10 +448,12 @@ public class Web {
             HtmlPage page = client.getPage(url);
             HtmlElement cityStateElement = ((HtmlElement) page.getFirstByXPath(".//*[@class = 'dl-horizontal']/dd"));
             String cityState = cityStateElement.asText();
+            client.close();
             return cityState;
         }
         catch(IOException e)
         {
+            client.close();
             return null;
         }
     }
@@ -554,10 +560,12 @@ public class Web {
             HtmlPage page = client.getPage(url);
             HtmlElement dist = page.getFirstByXPath("/html/body/h2[1]/strong");
             distance = Double.parseDouble(dist.asText());
+            client.close();
             return distance;
         }
         catch(IOException e){
             System.out.println("Unable to provide apx total distance. ");
+            client.close();
             return 0.0;
         }
         
