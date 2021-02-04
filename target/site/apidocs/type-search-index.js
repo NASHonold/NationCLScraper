@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"scraper","l":"CraigslistScraper"},{"p":"scraper","l":"Item"},{"p":"scraper","l":"State"},{"p":"scraper","l":"Validate"},{"p":"scraper","l":"Web"}]

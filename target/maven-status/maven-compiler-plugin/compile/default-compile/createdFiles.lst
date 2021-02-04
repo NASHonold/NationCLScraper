@@ -1,0 +1,5 @@
+scraper\Validate.class
+scraper\Web.class
+scraper\CraigslistScraper.class
+scraper\Item.class
+scraper\State.class
